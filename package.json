@@ -28,7 +28,7 @@
     "test": "npm run lint && karma start karma.conf.js",
     "lint": "tsc --noEmit && eslint src/*.ts",
     "reset": "rm -rf dist node_modules",
-    "preinstall": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "Typescript",
