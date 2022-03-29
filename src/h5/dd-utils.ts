@@ -9,13 +9,13 @@ export class DDUtils {
     let passiveTest = () => {
       // do nothing
     };
-    document.addEventListener('test', passiveTest, {
-      get passive() {
-        supportsPassive = true;
-        return true;
-      }
-    });
-    document.removeEventListener('test', passiveTest);
+    // document.addEventListener('test', passiveTest, {
+    //   get passive() {
+    //     supportsPassive = true;
+    //     return true;
+    //   }
+    // });
+    // document.removeEventListener('test', passiveTest);
     return supportsPassive;
   })());
 
